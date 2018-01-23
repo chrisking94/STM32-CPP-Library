@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ADE269EB-88A3-4D7F-9ADD-6D3BA025CB38}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>./Core;./HAL;.;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F1xx_HAL_Driver\Inc;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F1xx_HAL_Driver\Inc\Legacy;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\CMSIS_HAL\Device\ST\STM32F1xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\CMSIS_HAL\Include;e:\sysgcc\arm-none-eabi\arm-none-eabi\include\c++\5.4.1;e:\sysgcc\arm-none-eabi\arm-none-eabi\include\c++\5.4.1\arm-none-eabi\armv7-m;e:\sysgcc\arm-none-eabi\arm-none-eabi\include\c++\5.4.1\backward;e:\sysgcc\arm-none-eabi\lib\gcc\arm-none-eabi\5.4.1\include;e:\sysgcc\arm-none-eabi\lib\gcc\arm-none-eabi\5.4.1\include-fixed;e:\sysgcc\arm-none-eabi\arm-none-eabi\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)STM32F10x_StdPeriph_Lib_CPP_Version-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>.;e:\sysgcc\arm-none-eabi\arm-none-eabi\include\c++\5.4.1;e:\sysgcc\arm-none-eabi\arm-none-eabi\include\c++\5.4.1\arm-none-eabi\armv7-m;e:\sysgcc\arm-none-eabi\arm-none-eabi\include\c++\5.4.1\backward;e:\sysgcc\arm-none-eabi\lib\gcc\arm-none-eabi\5.4.1\include;e:\sysgcc\arm-none-eabi\lib\gcc\arm-none-eabi\5.4.1\include-fixed;e:\sysgcc\arm-none-eabi\arm-none-eabi\include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F1xx_HAL_Driver\Inc;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\STM32F1xx_HAL_Driver\Inc\Legacy;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\CMSIS_HAL\Device\ST\STM32F1xx\Include;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\STM32F1xxxx\CMSIS_HAL\Include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(LOCALAPPDATA)\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32\stm32_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)STM32F10x_StdPeriph_Lib_CPP_Version-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="debug.mak" />
+    <None Include="Makefile" />
+    <None Include="release.mak" />
+    <None Include="stm32.xml" />
+    <None Include="STM32F10x_StdPeriph_Lib_CPP_Version-Debug.vgdbsettings" />
+    <None Include="STM32F10x_StdPeriph_Lib_CPP_Version-Release.vgdbsettings" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseLib.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="CommuDev.h" />
+    <ClInclude Include="Core\stm32f10x.h" />
+    <ClInclude Include="Core\stm32f10x_conf.h" />
+    <ClInclude Include="Core\system_stm32f10x.h" />
+    <ClInclude Include="HAL\ADC.h" />
+    <ClInclude Include="HAL\AFIO.h" />
+    <ClInclude Include="HAL\Common.h" />
+    <ClInclude Include="HAL\DMA.h" />
+    <ClInclude Include="HAL\DMA_Channel.h" />
+    <ClInclude Include="HAL\EXTI.h" />
+    <ClInclude Include="HAL\GPIO.h" />
+    <ClInclude Include="HAL\GPIOPin.h" />
+    <ClInclude Include="HAL\I2C.h" />
+    <ClInclude Include="HAL\NVIC.h" />
+    <ClInclude Include="HAL\RCC.h" />
+    <ClInclude Include="HAL\RTC.h" />
+    <ClInclude Include="HAL\SCB.h" />
+    <ClInclude Include="HAL\SPI.h" />
+    <ClInclude Include="HAL\SysTick.h" />
+    <ClInclude Include="HAL\TIM.h" />
+    <ClInclude Include="HAL\Usart.h" />
+    <ClInclude Include="Serial.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseLib.cpp" />
+    <ClCompile Include="CommuDev.cpp" />
+    <ClCompile Include="Core\startup_stm32f103xb.c" />
+    <ClCompile Include="Core\system_stm32f10x.c" />
+    <ClCompile Include="example.cpp" />
+    <ClCompile Include="HAL\ADC.cpp" />
+    <ClCompile Include="HAL\AFIO.cpp" />
+    <ClCompile Include="HAL\Common.cpp" />
+    <ClCompile Include="HAL\DMA.cpp" />
+    <ClCompile Include="HAL\DMA_Channel.cpp" />
+    <ClCompile Include="HAL\EXTI.cpp" />
+    <ClCompile Include="HAL\GPIO.cpp" />
+    <ClCompile Include="HAL\GPIOPin.cpp" />
+    <ClCompile Include="HAL\I2C.cpp" />
+    <ClCompile Include="HAL\NVIC.cpp" />
+    <ClCompile Include="HAL\RCC.cpp" />
+    <ClCompile Include="HAL\RTC.cpp" />
+    <ClCompile Include="HAL\SCB.cpp" />
+    <ClCompile Include="HAL\SPI.cpp" />
+    <ClCompile Include="HAL\SysTick.cpp" />
+    <ClCompile Include="HAL\TIM.cpp" />
+    <ClCompile Include="HAL\Usart.cpp" />
+    <ClCompile Include="Serial.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,15 @@
+Debug/DMA_Channel.o: HAL/DMA_Channel.cpp HAL/DMA_Channel.h HAL/Common.h \
+ Core/stm32f10x.h \
+ C:\Users\Administrator.PC--20130717MTX\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_HAL/Include/core_cm3.h \
+ e:\sysgcc\arm-none-eabi\lib\gcc\arm-none-eabi\5.4.1\include\stdint.h \
+ e:\sysgcc\arm-none-eabi\arm-none-eabi\include\stdint.h \
+ e:\sysgcc\arm-none-eabi\arm-none-eabi\include\machine\_default_types.h \
+ e:\sysgcc\arm-none-eabi\arm-none-eabi\include\sys\features.h \
+ e:\sysgcc\arm-none-eabi\arm-none-eabi\include\_newlib_version.h \
+ e:\sysgcc\arm-none-eabi\arm-none-eabi\include\sys\_intsup.h \
+ e:\sysgcc\arm-none-eabi\arm-none-eabi\include\sys\_stdint.h \
+ C:\Users\Administrator.PC--20130717MTX\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_HAL/Include/core_cmInstr.h \
+ C:\Users\Administrator.PC--20130717MTX\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_HAL/Include/cmsis_gcc.h \
+ C:\Users\Administrator.PC--20130717MTX\AppData\Local\VisualGDB\EmbeddedBSPs\arm-eabi\com.sysprogs.arm.stm32/STM32F1xxxx/CMSIS_HAL/Include/core_cmFunc.h \
+ Core/system_stm32f10x.h \
+ e:\sysgcc\arm-none-eabi\lib\gcc\arm-none-eabi\5.4.1\include\stdint-gcc.h

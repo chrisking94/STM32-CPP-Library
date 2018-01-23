@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{20d36909-c0af-43b6-bb3c-4095f81f5555}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{49433057-cedb-4bfc-b3a5-719399e0a766}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{d48178c1-f482-4b2c-b080-e172822dfd53}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{77c5e4f4-d868-4ed1-89ec-fb1578c5d579}</UniqueIdentifier>
+      <Extensions>*.vgdbsettings</Extensions>
+    </Filter>
+    <Filter Include="Header files\HAL">
+      <UniqueIdentifier>{d29816ee-0500-4a13-8d30-9f09847a50a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Core">
+      <UniqueIdentifier>{eddd824b-4dfa-4f50-b81b-2163d2a4a076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\HAL">
+      <UniqueIdentifier>{dabac5b2-c3e3-4ae3-9653-ea9d9d510ec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Core">
+      <UniqueIdentifier>{68649668-c70e-48ba-83ec-1c2f05b9392e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="STM32F10x_StdPeriph_Lib_CPP_Version-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="STM32F10x_StdPeriph_Lib_CPP_Version-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="stm32.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HAL\SysTick.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\Usart.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\ADC.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\AFIO.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\Common.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\DMA.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\DMA_Channel.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\EXTI.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\GPIO.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\GPIOPin.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\I2C.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\NVIC.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\RCC.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\RTC.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\SCB.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\SPI.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\stm32f10x.h">
+      <Filter>Header files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\stm32f10x_conf.h">
+      <Filter>Header files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\system_stm32f10x.h">
+      <Filter>Header files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Serial.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommuDev.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseLib.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="HAL\TIM.h">
+      <Filter>Header files\HAL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HAL\GPIOPin.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\I2C.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\NVIC.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\RCC.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\RTC.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\SCB.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\SPI.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\SysTick.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\Usart.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\ADC.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\AFIO.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\Common.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\DMA.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\DMA_Channel.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\EXTI.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\GPIO.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\system_stm32f10x.c">
+      <Filter>Source files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\startup_stm32f103xb.c">
+      <Filter>Source files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Serial.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommuDev.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="example.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseLib.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\TIM.cpp">
+      <Filter>Source files\HAL</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
